@@ -1,7 +1,7 @@
 /**
  * 文章相关功能
  */
-module。exports = {
+module.exports = {
   // 文章URL前缀
   POST_URL_PREFIX: process.env.NEXT_PUBLIC_POST_URL_PREFIX ?? 'article',
   // POST类型文章的默认路径前缀，例如默认POST类型的路径是  /article/[slug]
