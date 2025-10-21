@@ -2,7 +2,7 @@
  * 挂件组件相关
  * 可同时开启多个支持 WALINE VALINE GISCUS CUSDIS UTTERRANCES GITALK
  */
-module.exports = {
+module。exports = {
   COMMENT_HIDE_SINGLE_TAB:
     process.env.NEXT_PUBLIC_COMMENT_HIDE_SINGLE_TAB || false, // Whether hide the tab when there's no tabs. 只有一个评论组件时是否隐藏切换组件的标签页
 
