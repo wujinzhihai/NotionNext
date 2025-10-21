@@ -1,7 +1,7 @@
 /**
  * 文章相关功能
  */
-module。exports = {
+module.exports = {
   // 文章URL前缀
   POST_URL_PREFIX: process.env.NEXT_PUBLIC_POST_URL_PREFIX ?? 'article',
   // POST类型文章的默认路径前缀，例如默认POST类型的路径是  /article/[slug]
@@ -10,18 +10,18 @@ module。exports = {
   // 例：如想連結改成前綴 article + 時間戳記，可變更為： 'article/%year%/%month%/%day%'
 
   POST_SCHEDULE_PUBLISH:
-    process。env。NEXT_PUBLIC_NOTION_SCHEDULE_PUBLISH === 'true' || true， // 按照文章的发布时间字段，控制自动上下架 
+    process.env.NEXT_PUBLIC_NOTION_SCHEDULE_PUBLISH === 'true' || true， // 按照文章的发布时间字段，控制自动上下架 
 
   // 分享条
-  POST_SHARE_BAR_ENABLE: process。env。NEXT_PUBLIC_POST_SHARE_BAR === 'true' || true， //文章底部分享条开关 开true 关false
+  POST_SHARE_BAR_ENABLE: process.env.NEXT_PUBLIC_POST_SHARE_BAR === 'true' || true， //文章底部分享条开关 开true 关false
   POSTS_SHARE_SERVICES:
-    process。env。NEXT_PUBLIC_POST_SHARE_SERVICES ||
+    process.env.NEXT_PUBLIC_POST_SHARE_SERVICES ||
     'link,wechat,qq,weibo,email,facebook,twitter,telegram,messenger,line,reddit,whatsapp,linkedin', // 分享的服務，按顺序显示,逗号隔开
   // 所有支持的分享服务：link(复制链接),wechat(微信),qq,weibo(微博),email(邮件),facebook,twitter,telegram,messenger,line,reddit,whatsapp,linkedin,vkshare,okshare,tumblr,livejournal,mailru,viber,workplace,pocket,instapaper,hatena
 
   POST_TITLE_ICON: process.env.NEXT_PUBLIC_POST_TITLE_ICON === 'true' || true, // 是否显示标题icon
   POST_DISABLE_GALLERY_CLICK:
-    process。env。NEXT_PUBLIC_POST_DISABLE_GALLERY_CLICK === 'true' || false, // 画册视图禁止点击，方便在友链页面的画册插入链接
+    process.env.NEXT_PUBLIC_POST_DISABLE_GALLERY_CLICK === 'true' || false, // 画册视图禁止点击，方便在友链页面的画册插入链接
   POST_LIST_STYLE: process.env.NEXT_PUBLIC_POST_LIST_STYLE || 'page', // ['page','scroll] 文章列表样式:页码分页、单页滚动加载
   POST_LIST_PREVIEW: process.env.NEXT_PUBLIC_POST_PREVIEW === 'true' || false, //  是否在列表加载文章预览
   POST_PREVIEW_LINES: parseInt(process.env.NEXT_PUBLIC_POST_POST_PREVIEW_LINES) || 12, // 预览博客行数
