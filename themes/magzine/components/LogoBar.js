@@ -18,7 +18,7 @@ export default function LogoBar({ siteInfo, className }) {
           alt={siteConfig('AUTHOR')}
           className='mr-2 hidden md:inline-block'
         />
-        <span>{siteConfig('TITLE')}</span>
+        <span>首页</span>
       </Link>
     </div>
   )
