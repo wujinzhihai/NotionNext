@@ -36,8 +36,8 @@ const locales = (function () {
 // eslint-disable-next-line no-unused-vars
 const preBuild = (function () {
   if (
-    !process.env.npm_lifecycle_event === 'export' &&
-    !process.env.npm_lifecycle_event === 'build'
+    process.env.npm_lifecycle_event !== 'export' &&
+    process.env.npm_lifecycle_event !== 'build'
   ) {
     return
   }
@@ -89,7 +89,7 @@ const nextConfig = {
     : process.env.NEXT_BUILD_STANDALONE === 'true'
       ? 'standalone'
       : undefined,
-  staticPageGenerationTimeout: 120,
+  staticPageGenerationTimeout: 300,
   // 多语言， 在export时禁用
   i18n: process.env.EXPORT
     ? undefined
@@ -105,6 +105,8 @@ const nextConfig = {
     domains: [
       'gravatar.com',
       'www.notion.so',
+      's3.us-west-2.amazonaws.com',
+      'prod-files-secure.s3.us-west-2.amazonaws.com',
       'avatars.githubusercontent.com',
       'images.unsplash.com',
       'source.unsplash.com',
