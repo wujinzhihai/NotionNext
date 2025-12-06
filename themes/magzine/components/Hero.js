@@ -1,4 +1,5 @@
 // import { useGlobal } from '@/lib/global'
+import ThemeSwitch from '@/components/ThemeSwitch'
 import BannerItem from './BannerItem'
 import PostItemCardTop from './PostItemCardTop'
 import PostItemCardWide from './PostItemCardWide'
@@ -15,6 +16,9 @@ const Hero = ({ posts }) => {
   const post2 = posts[2]
   return (
     <>
+      {/* 主题切换按钮 */}
+      <ThemeSwitch />
+      
       <div className='w-full mx-auto max-w-screen-3xl xl:flex justify-between gap-10'>
         {/* 左侧一篇主要置顶文章 */}
         <div className='basis-1/2 mb-6 px-2 lg:px-5'>
