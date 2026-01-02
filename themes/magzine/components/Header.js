@@ -51,6 +51,12 @@ export default function Header(props) {
       name: locale.NAV.SEARCH,
       href: '/search',
       show: CONFIG.MENU_SEARCH
+    },
+    {
+      icon: 'fas fa-user',
+      name: locale.NAV.ABOUT,
+      href: '/about',
+      show: true
     }
   ]
 
