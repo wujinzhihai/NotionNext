@@ -19,7 +19,7 @@ export default function LogoBar({ siteInfo, className }) {
           className='mr-2 hidden md:inline-block'
         />
 <<<<<<< HEAD
-        <span>首页</span>
+        <span>吴哥的博客</span>
       </Link>
 =======
         <span>{siteConfig('TITLE')}</span>
