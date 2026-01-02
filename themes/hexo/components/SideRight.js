@@ -93,7 +93,9 @@ export default function SideRight(props) {
             </Card>
           )}
 
-        <Announcement post={notice} />
+        {siteConfig('HEXO_WIDGET_ANNOUNCEMENT', null, CONFIG) && (
+          <Announcement post={notice} />
+        )}
 
         {siteConfig('COMMENT_WALINE_SERVER_URL') &&
           siteConfig('COMMENT_WALINE_RECENT') && <HexoRecentComments />}
